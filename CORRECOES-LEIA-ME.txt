@@ -1,0 +1,19 @@
+# Strike Neon — notas desta correção
+
+- Corrigida a incompatibilidade Vite 8 / esbuild: esbuild atualizado para ^0.28.0.
+- Definido Node mínimo 20.19 (usar Node 22 na Vercel).
+- Uniformizado o package name para com.sarfen1.strikeneon.
+- Removida a associação Android antiga de assetlinks.json; o fingerprint existente foi preservado e tem de ser confirmado no Play Console.
+- Removido o falso banner visual e a ligação inválida entre um ID de unidade AdMob e um slot AdSense.
+- Os três IDs AdMob originais permanecem no código.
+
+Limitação: este ZIP é o projeto web para Vercel. Não inclui projeto Android nem SDK AdMob nativo. O AdMob real na Play Store e a verificação TWA dependem do projeto Android e do certificado SHA-256 correto.
+
+- Todos os trails pagos passaram a custar 300 Shards.
+- Todos os backgrounds pagos passaram a custar 200 Shards.
+- Sensibilidade passa a atualizar o motor imediatamente durante a partida.
+- Best Score e Best Kills apresentados no menu principal; Kills por partida guardados no histórico local.
+- Missões disponíveis para claim passam para o topo da respetiva lista.
+- Novo pack Weekly Deal: 1.000 Shards por $0.90, produto `shards_weekly_090`, com bloqueio local de 7 dias após compra.
+- Preços apresentados na interface em USD ($).
+- Perfil, estatísticas, cosméticos, títulos e moedas continuam guardados localmente no dispositivo.

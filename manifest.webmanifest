@@ -1,0 +1,26 @@
+{
+  "name": "Strike Neon",
+  "short_name": "Strike Neon",
+  "description": "A fast neon arcade space shooter. Dodge bullets, blast waves and beat the bosses.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06030f",
+  "theme_color": "#06030f",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/strike-neon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/strike-neon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

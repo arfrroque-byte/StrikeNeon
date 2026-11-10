@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#06030f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Strike Neon</title>
+    <meta name="description" content="Strike Neon is a fast neon arcade space shooter. Dodge bullets, blast waves of enemies and beat the bosses." />
+    <meta property="og:title" content="Strike Neon" />
+    <meta property="og:description" content="Strike Neon is a fast neon arcade space shooter. Dodge bullets, blast waves of enemies and beat the bosses." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/strike-neon-icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/strike-neon-192.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <audio id="custom-bgm" src="/bgm.mp3" loop preload="auto" style="display:none;"></audio>
+    <script>
+      try {
+        localStorage.setItem('strike-neon:music-muted', '1');
+      } catch(e) {}
+
+      window.addEventListener('pointerdown', function() {
+        var audio = document.getElementById('custom-bgm');
+        if (audio && audio.paused) {
+          audio.volume = 0.5;
+          audio.play().catch(function(){});
+        }
+      }, {once: true});
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+STRIKE NEON — ALTERAÇÕES DE INTERFACE E BANNER
+
+Alterações aplicadas:
+1. Android / AdMob:
+   - O banner Large Anchored Adaptive foi substituído pelo Anchored Adaptive normal,
+     que usa uma altura mais baixa em ecrãs de telemóvel.
+   - Mantidos os IDs AdMob, UMP/consentimento, anúncios intersticiais e restantes funções.
+   - O SDK AdMob escolhe a altura final adequada; por isso, a altura em píxeis pode variar
+     consoante a largura/densidade do dispositivo e o formato do anúncio.
+
+2. Interface Web (src/index.css):
+   - Os botões de som e pausa foram reposicionados para o topo da área de jogo.
+   - Removido o acréscimo do safe-area-inset-top que os empurrava para baixo e os fazia
+     sobrepor visualmente a informação WAVE/KILLS.
+   - A alteração React/CSS é partilhada pela versão Web e pela WebView Android que carrega
+     https://strike-neon-arcade.vercel.app/.
+
+Ficheiros alterados:
+- src/index.css
+- android/app/src/main/java/com/sarfen1/strikeneon/NativeAdsController.kt
+
+Importante:
+- Este ZIP contém o código-fonte do projeto, não um AAB já compilado.
+- Para publicar a alteração do banner na Google Play, é necessário compilar um novo AAB
+  no Android Studio e enviá-lo para a Play Console.
+- A interface Web só fica atualizada na Vercel depois de publicar/deployar o código Web.
+- Não foram alterados IDs de compras, IDs AdMob, quantidades de shards ou funcionalidades.

@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sarfen1.strikeneon",
+      "sha256_cert_fingerprints": [
+        "6C:48:D5:49:CE:44:0E:88:9A:4D:70:12:20:63:C4:39:05:FB:6A:9D:9A:C6:43:5F:76:DE:53:14:81:29:C8:CD"
+      ]
+    }
+  }
+]

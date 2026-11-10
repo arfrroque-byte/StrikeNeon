@@ -1,0 +1,6 @@
+{
+  "name": "Strike Neon",
+  "description": "Strike Neon is a fast neon arcade space shooter. Dodge bullets, blast waves of enemies and beat the bosses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
